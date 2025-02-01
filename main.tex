@@ -1,0 +1,256 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Qingyuan Wu} \\ \vspace{1pt}
+    University of Southampton, Southampton, SO14 3LG \\ \vspace{1pt}
+    \small 
+    % \raisebox{-0.1\height}\faPhone\ +44 07827197603 
+    ~ \href{mailto:qingyuanwu4work@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{mail}} 
+    ~ \href{https://qingyuanwunothing.github.io/}{\raisebox{-0.2\height}\faHome\  \underline{homepage}} 
+    ~ \href{https://linkedin.com/in/qingyuan-wu-441412290/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin}}  ~
+    \href{https://github.com/QingyuanWuNothing}{\raisebox{-0.2\height}\faGithub\ \underline{github}}
+    \vspace{-8pt}
+\end{center}
+
+
+%------RESEARCH INTEREST-------
+\section{Research Interests}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Reinforcement Learning, Machine Learning}{}
+      {}{}
+  \resumeSubHeadingListEnd
+  
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Southampton}{Sep. 2024 -- Sep. 2026 (Expected)}
+      {Doctorate of Philosophy in Computer Science}{Southampton, UK}
+  \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Liverpool}{Sep. 2023 -- Sep. 2024}
+      {Doctorate of Philosophy in Computer Science (transfer to Southampton)}{Liverpool, UK}
+  \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Nanjing University of Aeronautics and Astronautics}{Sep. 2019 -- April 2022}
+      {Master of Engineering in Computer Science}{Nanjing, CN}
+  \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Nanjing University of Aeronautics and Astronautics}{Sep. 2015 -- June 2019}
+      {Bachelor of Science in Mathematics}{Nanjing, CN}
+  \resumeSubHeadingListEnd
+
+%------WORK EXPERIENCE-------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Parametrix.AI Technology}{April 2022 -- Sep. 2023}
+      {Reinforcement Learning and Gaming AI Researcher, full time}{ShenZhen, CN}
+      \resumeItemListStart
+            \resumeItem{Working on the most challenging and complicated gaming scenarios(e.g., FPS, TPS).}
+            \resumeItem{Developed various and lively gaming AI (e.g., human-like, highly-skilled).}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+    \resumeSubHeadingListStart
+      % \resumeProjectHeading
+      %     {\textbf{Under Review}\emph{}}{}
+      %     \resumeItemListStart
+      %       \resumeItem{}
+      %     \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Conference}\emph{}}{}
+          \resumeItemListStart
+            \resumeItem{\textbf{Qingyuan Wu}, Simon Sinong Zhan, Yixuan Wang, Yuhui Wang, Chung-Wei Lin, Chen Lv, Qi Zhu, Chao Huang. \textit{Variational Delayed Policy Optimization.} Conference on Neural Information Processing Systems 2024 (NeurIPS 2024).}
+            \resumeItem{\textbf{Qingyuan Wu}, Simon Sinong Zhan, Yixuan Wang, Yuhui Wang, Chung-Wei Lin, Chen Lv, Qi Zhu, Jürgen Schmidhuber, Chao Huang. \textit{Boosting Reinforcement Learning with Strongly Delayed Feedback Through Auxiliary Short Delays.} International Conference on Machine Learning 2024 (ICML 2024).}
+            \resumeItem{Yuhui Wang, Weida Li, Francesco Faccio,\textbf{Qingyuan Wu}, Jürgen Schmidhuber. \textit{Highway Value Iteration Networks.} International Conference on Machine Learning 2024 (ICML 2024).}
+            \resumeItem{Simon Sinong Zhan, Yixuan Wang, \textbf{Qingyuan Wu}, Ruochen Jiao, Chao Huang, Qi Zhu. \textit{State-wise Safe Reinforcement Learning With Pixel Observations.} Learning for Dynamics \& Control Conference 2024 (L4DC 2024).}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Journal}\emph{}}{}
+          \resumeItemListStart
+            \resumeItem{Dan Zhu, Xiaohong Chen, \textbf{Qingyuan Wu}, Shunming Li. \textit{Subspace Clustering Induced by Adaptive Graph Learning}. Computer Engineering and Applications, 56(21):8, 2019.}
+            % \resumeItem{}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Thesis}\emph{}}{}
+          \resumeItemListStart
+            \resumeItem{[Master thesis] \textit{Research on Efficient Exploration and Learning Method Based on Rollout in Complex Scenarios.} Advised by Prof. Xiaoyang Tan}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Preprint}\emph{}}{}
+          \resumeItemListStart
+            \resumeItem{Simon Sinong Zhan, \textbf{Qingyuan Wu},  Zhian Ruan, Frank Yang, Philip Wang, Yixuan Wang, Ruochen Jiao, Chao Huang, Qi Zhu. \textit{Inverse Delayed Reinforcement Learning.} arxiv: 2412.02931.}
+            \resumeItem{Yuhui Wang, \textbf{Qingyuan Wu}, Weida Li, Dylan R. Ashley, Francesco Faccio, Chao Huang, Jürgen Schmidhuber. \textit{Scaling Value Iteration Networks to 5000 Layers for Extreme Long-Term Planning.} arxiv: 2406.08404v1.}
+            \resumeItem{Yuhui Wang, Miroslav Strupl, Francesco Faccio, \textbf{Qingyuan Wu}, Haozhe Liu, Michał Grudzień, Xiaoyang Tan, Jürgen Schmidhuber. \textit{Highway Reinforcement Learning.} arxiv: 2405.18289.}
+            \resumeItem{Jiayu Yao, \textbf{Qingyuan Wu}, Quan Feng, Songcan Chen. \textit{Learning downstream task by selectively capturing complementary knowledge from multiple self-supervisedly learning pretexts.} arxiv: 2204.05248, 2022.}
+            \resumeItem{\textbf{Qingyuan Wu}, Yuhui Wang. \textit{Expected-Max Ensembled Q-learning with Temporally-Varying Exploration.} 2021.}
+            \resumeItem{Yuhui Wang, \textbf{Qingyuan Wu}, Pengcheng He, Xiaoyang Tan. \textit{A Novel Greedy-Step Bellman Optimality Equation for Efficient Value Propagation.} arxiv: 2102.11717, 2021.}
+            \resumeItem{\textbf{Qingyuan Wu}, Xiaoyang Tan. \textit{Graph-Constrained Monte Carlo Tree Search for Low Variance Bus Driver Scheduling.} 2021.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+% \section{Projects}
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%           {\textbf{}\emph{}}{}
+%           \resumeItemListStart
+%             \resumeItem{}
+%             \resumeItem{}
+%           \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Skills}{: Python, C++, Pytorch, Tensorflow} \\
+    }}
+ \end{itemize}
+
+ 
+% %-----------HONOURS And REWARDS-----------
+% \section{Honours and Rewards}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{
+%     \item{\textbf{Honours}{: }}
+%     \item{\textbf{Rewards}{: }}
+%     }
+%  \end{itemize}
+ 
+ \vspace{-16pt}
+
+\end{document}
